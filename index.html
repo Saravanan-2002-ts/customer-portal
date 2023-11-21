@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Responsive Sidebar</title>
+  <!-- Link Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+        <script src= "https://js.zohostatic.com/creator/widgets/version/1.0/widgetsdk-min.js"></script>
+</head>
+
+<body>
+  <div class="sidebar" id="menu-bar">
+    <div class="logo_details">
+      <i class="bx bxl-audible icon"></i>
+      <div class="logo_name">CloudBound</div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <!-- <li>
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Search...">
+        <span class="tooltip">Search</span>
+      </li> -->
+      <li>
+        <a href="zoho_home.html" target="Myframe">
+          <i class="bx bxs-home-circle"></i>
+          <span class="link_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li>
+        <a href="zoho_customer.html" target="Myframe">
+          <i class="bx bx-user"></i>
+          <span class="link_name">Customer</span>
+        </a>
+        <span class="tooltip">Customer</span>
+      </li>
+      <ul>
+        <li>
+          <a>
+            <i class="bx bx-book-open"></i>
+            <span class="link_name">Zoho Books</span>
+            <i class="bx bx-down-arrow arrow"></i>
+          </a>
+          <span class="tooltip">Zoho Books</span>
+          <ul class="sub-menu">
+            <a href="#">
+              <!-- <li><a class="link_name" href="">Zoho Book</a></li> -->
+              <li><a href="items.html" target="Myframe">Items Report</a></li>
+              <li><a href="estimate.html" target="Myframe">Estimates Report</a></li>
+              <li><a href="salesorder.html" target="Myframe">SalesOrder Report</a></li>
+            </a>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-pie-chart-alt-2"></i>
+            <span class="link_name">Zoho CRM</span>
+            <i class="bx bx-down-arrow arrow"></i>
+          </a>
+          <span class="tooltip">Zoho CRM</span>
+          <ul class="sub-menu">
+            <a href="#">
+              <li><a href="leads.html" target="Myframe">Leads</a></li>
+              <li><a href="deals.html" target="Myframe">Deals</a></li>
+            </a>
+          </ul>
+        </li>
+        <li>
+          <a href="zoho_project.html" target="Myframe">
+            <i class="bx bx-cube-alt"></i>
+            <span class="link_name">Projects</span>
+          </a>
+          <span class="tooltip">Projects</span>
+        </li>
+        <li>
+          <a href="zoho_desk.html" target="Myframe">
+            <i class="bx bx-cart-alt"></i>
+            <span class="link_name">Zoho Desk</span>
+          </a>
+          <span class="tooltip">Zoho Desk</span>
+        </li>
+        <li class="profile">
+          <div class="profile_details">
+            <img style="background: white;" src="CB logo.png" alt="profile image">
+            <div class="profile_content">
+              <div class="name">Cloud Bound</div>
+              <div class="designation">Admin</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </li>
+      </ul>
+      <!-- <div id="menu-bar">
+      
+    </div>
+  
+    <input type="text" id="color-input" placeholder="Enter hex color code">
+    <button onclick="changeColor()">Change Color</button> -->
+  </div>
+
+
+  <section class="home-section">
+    <div class="text">Dashboard</div>
+    <div class="box">
+    <div class="total">
+      <div>0</div>
+      <div>Total Leads</div>
+    </div>
+    <div class="total">
+      <div>0</div>
+      <div>Total Deals</div>
+    </div>
+    <div class="total">
+      <div>0</div>
+      <div>Total Estimates</div>
+    </div>
+    <div class="total">
+      <div>0</div>
+      <div>Total SalesOrders</div>
+    </div>
+    <div class="total">
+      <div>0</div>
+      <div>Total Projects</div>
+    </div>
+    <div class="total">
+      <div>0</div>
+      <div>Total Tickets</div>
+    </div>
+  </div>
+    <div style="width: 98%;" id="iframe-container">
+      <iframe style="margin-left: 20px; height: 700px; width: 100%;" id="iframe" name="Myframe"></iframe>
+    </div>
+  </section>
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+pbz5Fl7FXT5f5z5u5aaC94F5F5F5F5F5F5F5F"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
